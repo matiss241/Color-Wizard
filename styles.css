@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Gluten:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  margin: 0;
+}
+
+.bg {
+  /* Background with a gradient */
+  background: rgb(1, 31, 38);
+  background: linear-gradient(
+    90deg,
+    rgba(1, 31, 38, 1) 0%,
+    rgba(11, 65, 77, 1) 16%,
+    rgba(37, 123, 136, 1) 31%,
+    rgba(102, 191, 195, 1) 53%,
+    rgba(11, 65, 77, 1) 78%
+  );
+  min-height: 100%;
+  min-width: 1024px;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -3;
+}
+
+.title {
+  font-family: "Gluten", "Arial";
+  font-size: 5rem;
+  color: #1b2325;
+  position: absolute;
+}
+
+.container {
+  margin-top: 12rem;
+  width: 70%;
+  height: 70%;
+  border-radius: 30px;
+  position: absolute;
+  background-color: rgba(0, 255, 255, 0.137);
+  z-index: -2;
+}
+
+.color-box {
+  display: inline-block;
+  width: 25%;
+  height: 60%;
+  margin-top: 6.25%;
+  margin-left: 6.25%;
+  border-radius: 10px;
+  position: relative;
+}
+
+/* Button */
+.get-random-bg {
+  margin-top: 1%;
+  margin-left: 6%;
+  width: 88.5%;
+  height: 20%;
+  position: relative;
+  border-radius: 20px;
+  border-width: 5px;
+  font-family: "Roboto";
+  font-size: 3rem;
+  font-weight: bold;
+  background-color: #26a6bf;
+}
+
+.get-random-bg:hover {
+  background-color: #2497ad;
+}
+
+h3 {
+  position: static;
+  font-family: "Roboto";
+  color: #1b1b1ba6;
+  margin-left: 1rem;
+}
+
+.icon {
+  cursor: pointer;
+  user-select: none;
+  width: 2rem;
+  color: #1b1b1ba6;
+  position: absolute;
+  align-self: center;
+  display: inline-block;
+  bottom: 1vh;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.unlock1,
+.unlock2,
+.unlock3 {
+  display: none;
+}
+
+.lock1,
+.lock2,
+.lock3 {
+  display: none;
+}
+
+.active {
+  display: block;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Color Wizard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Background -->
+  <section class="bg"></section>
+  <!-- Title -->
+  <h1 class="title">Color Wizard</h1>
+  <!-- Background of color boxes -->
+  <div class="container">
+
+    <!-- Color box 1 -->
+    <div class="color-box" id="color1">
+      <h3 id="color-hex-1"></h3>
+      <!-- Provides functionality to lock a color, so it wouldn't change after a click of the button -->
+      <div class="icon"> 
+        <img class="unlock1 active" src="icons/unlock.svg" alt="unlock">
+        <img class="lock1" src="icons/lock.svg" alt="lock">
+      </div>
+    </div>
+
+    <!-- Color box 2 -->
+    <div class="color-box" id="color2">
+      <h3 id="color-hex-2"></h3>
+      <div class="icon">
+        <img class="unlock2 active" src="icons/unlock.svg" alt="unlock">
+        <img class="lock2" src="icons/lock.svg" alt="lock">
+      </div>
+    </div>
+
+    <!-- Color box 3 -->
+    <div class="color-box" id="color3">
+      <h3 id="color-hex-3"></h3>
+      <div class="icon">
+        <img class="unlock3 active" src="icons/unlock.svg" alt="unlock">
+        <img class="lock3" src="icons/lock.svg" alt="lock">
+      </div>
+    </div>
+
+    <!-- A button that changes the colors of boxes and generates their hex values -->
+    <button class="get-random-bg" onclick="changeColors()">Get Random Colors</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
